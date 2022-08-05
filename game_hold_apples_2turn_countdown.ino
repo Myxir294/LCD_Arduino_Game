@@ -215,11 +215,6 @@ void loop()
     }
 
     //Proceed if the player collected the previous apple
-//    if(apple_x != last_car_x || apple_y != last_car_y)//Erase
-//    {
-//      lcd.setCursor(apple_x, apple_y);
-//      lcd.write(byte(2));
-//    }  
 
     //Randomize the next position
     apple_x = random(16);
