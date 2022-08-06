@@ -1,4 +1,10 @@
 # LCD_Arduino_Game
-Fun game made for Arduino and LCD 16x2
+Fun game made for Arduino and LCD 16x2.
 
-https://youtu.be/NS5YVRj8-JI
+The goal of the game is to collect randomly appearing objects (apples) by riding into them with a controllable vehicle. The car is moved by the input buttons - one for forward movement and two for clockwise/counter-clockwise rotation (note that the display loops - going through the right "wall" leads to appearing next to the left one.) With each collected object (gained point), the player has less time before the next one disappears - if it does, the game is over and the score and highscore information is displayed. These values can be zeroed by pressing the movement button. To start the game again, the user has to reset the board via embedded reset button.    
+
+All the graphic objects are custom made and converted into characters showable by the 16x2 LCD display (connected to Arduino via I2C converter).  
+
+Additionaly, player actions have sound effects, achieved by various tones of the buzzer, operated with the use of PWM signal from one of the pins.  
+
+Here you can see short demo presentation of the game: https://youtu.be/NS5YVRj8-JI
