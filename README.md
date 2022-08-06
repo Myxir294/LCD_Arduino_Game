@@ -7,4 +7,4 @@ All the graphic objects are custom made and converted into characters showable b
 
 Additionaly, player actions have sound effects, achieved by various tones of the buzzer, operated with the use of PWM signal from one of the pins.  
 
-Here you can see short demo presentation of the game: https://youtu.be/NS5YVRj8-JI
+Here you can see short demo presentation of the game (sadly, the display is slightly corrupted in certain places): https://youtu.be/NS5YVRj8-JI
