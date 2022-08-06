@@ -2,9 +2,11 @@
 #include <LiquidCrystal_I2C.h>
 #include <EEPROM.h>
 
-#define BACKLIGHT_PIN 3
 //Pins definition
-const int LED_PIN = 13;
+
+#define BACKLIGHT_PIN 3 //one way
+
+const int LED_PIN = 13; //another
 const int MOVEMENT_PIN = 3;
 const int ROTATION_PIN = 2;
 const int RIGHT_ROTATION_PIN = 4;
@@ -18,7 +20,7 @@ int last_car_y = car_y;
 
 //Variables for vehicle orientation
 enum direction{LEFT,UP,RIGHT,DOWN};
-volatile direction rotate = LEFT;
+direction rotate = LEFT;
 direction last_rotate = rotate;
 
 //Defining LCD display object
@@ -255,7 +257,7 @@ void loop()
     switch(rotate){
       case LEFT:
         ++car_x;
-        if(car_x == 16){car_x = 0;}
+        if(car_x == 16){car_x = 0;} //out of bounds handling
         if(car_x == -1){car_x = 15;}
         lcd.setCursor(car_x, car_y);//move to the next one                
         lcd.write(byte(1));
@@ -296,12 +298,12 @@ void loop()
   else if(digitalRead(ROTATION_PIN) == LOW || digitalRead(RIGHT_ROTATION_PIN) == LOW)//If car is rotating
   {
     tone(buzzerPin, 800, 150);
-    if(digitalRead(ROTATION_PIN) == LOW)
+    if(digitalRead(ROTATION_PIN) == LOW) //left
     {
       if(rotate == DOWN){rotate = LEFT;}
       else{rotate = rotate + 1;}
     }
-    else if(digitalRead(RIGHT_ROTATION_PIN) == LOW)
+    else if(digitalRead(RIGHT_ROTATION_PIN) == LOW) //right
     {
       if(rotate == LEFT){rotate = DOWN;}
       else{rotate = rotate - 1;}      
