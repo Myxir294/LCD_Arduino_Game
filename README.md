@@ -9,4 +9,4 @@ Additionaly, player actions have sound effects, achieved by various tones of the
 
 Here you can see short demo presentation of the game (sadly, the display is slightly corrupted in certain places): https://youtu.be/NS5YVRj8-JI
 
-The project was made out of boredom and it is no longer developed by me, however it could be somewhat improved, e.g. by allowing to manually customize the difficulty level or by soldering the pieces together onto some circuit board. 
+The project was made for fun and it is no longer developed by me, however it could be somewhat improved, e.g. by allowing to manually customize the difficulty level or by soldering the pieces together onto some circuit board. 
