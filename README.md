@@ -8,6 +8,7 @@ All the graphic objects are custom made and converted into characters showable b
 Additionaly, player actions have sound effects, achieved by various tones of the buzzer, operated with the use of PWM signal from one of the pins.  
 
 Here you can see short demo presentation of the game (sadly, the display is slightly corrupted in certain places): https://youtu.be/NS5YVRj8-JI
+
 ![scheme](https://github.com/user-attachments/assets/0a8b2675-7a2c-4806-b0e1-110ab4e81a3e)
 
 The project was made for fun and it is no longer developed by me, however it could be somewhat improved, e.g. by allowing to manually customize the difficulty level or by soldering the pieces together onto some circuit board. 
